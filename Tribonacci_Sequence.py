@@ -37,6 +37,10 @@ def tribonacci(signature, n):
     
     if n == 0:
         return []
+    elif n == 1:
+        return signature[0:1]
+    elif n == 2:
+        return signature[0:2]
     else:
         counter = 3
         answer = tribonacci(signature, n, counter)
