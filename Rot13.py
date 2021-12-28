@@ -8,7 +8,6 @@ def rot13(message):
     answer = ""
     for char in message:
         if char.isalpha():
-            
             if char.isupper():
                 if ord(char) + 13 > 90:
                     answer += chr((ord(char)+13)%90 + 64)
