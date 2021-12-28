@@ -25,14 +25,14 @@
 def tribonacci(signature, n):
     
     # helper recursive function 
-    def tribonacci(accumulated, n, counter):
+    def helper_tribonacci(accumulated, n, counter):
         if counter == n:
             return accumulated
         else:
             sum = accumulated[len(accumulated)-1] + accumulated[len(accumulated)-2] + accumulated[len(accumulated)-3]
             accumulated.append(sum)
             counter += 1
-            return tribonacci(accumulated, n, counter)
+            return helper_tribonacci(accumulated, n, counter)
     
     
     if n == 0:
@@ -43,6 +43,6 @@ def tribonacci(signature, n):
         return signature[0:2]
     else:
         counter = 3
-        answer = tribonacci(signature, n, counter)
+        answer = helper_tribonacci(signature, n, counter)
         return answer
     
