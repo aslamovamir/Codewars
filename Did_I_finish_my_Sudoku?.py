@@ -35,8 +35,6 @@
 
 def done_or_not(board): #board[i][j]
     
-    for arr in board:
-        print(arr)
     Set = set()
     
     # let's first check the rows
