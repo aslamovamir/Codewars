@@ -76,7 +76,7 @@ def simplify(poly):
 
     # sort the list
     variables.sort()
-    # list expression is a lis =t of expressions to be later sorted according to length
+    # list expression is a list of expressions to be later sorted according to length
     list_expression = []
     min_var = variables[0]
     min = len(variables[0])
@@ -106,3 +106,6 @@ def simplify(poly):
     if answer[0] == '+':
         answer = answer[1:]
     return answer
+
+
+
